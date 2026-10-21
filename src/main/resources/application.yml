@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: tableturn
+
+  datasource:
+    url: jdbc:h2:file:./data/tableturn;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  sql:
+    init:
+      mode: always
+
+  mvc:
+    problemdetails:
+      enabled: true
+
+server:
+  port: 8080
+
+tableturn:
+  tables: []
